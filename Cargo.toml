@@ -1,0 +1,15 @@
+[package]
+name = "chicken"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eframe = { version = "0.28.1", default-features = false, features = [
+    "default_fonts", # Embed the default egui fonts.
+    "glow",          # Use the glow rendering backend. Alternative: "wgpu".
+] }
+egui = "0.28.1"
+egui_extras = { version = "0.28.1", features = ["default", "image"] }
+image = { version = "0.25", features = ["png"] }
